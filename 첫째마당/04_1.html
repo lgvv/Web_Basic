@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+
+#wrap{
+display:flex;
+flex-flow:row wrap;
+width:90%; 
+margin:0 auto;
+}
+
+
+.header{
+	display: flex;
+	order:1;
+	position:relative;
+	justify-content: flex-end;
+	width:100%;
+}
+
+.header h1{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 12.5%;
+	height: 142px;
+	background: #ff6b57;
+}
+
+.header nav{
+	width: 87.5%;
+	min-height: 80px;
+	background: yellow;
+}
+
+.slider_section{
+	order:2;
+	width:50%;
+	background: #3c90be;
+}
+/*슬라이더 영역 전체의 50%
+근데 order를 보면 nav가 더 높아서 위에 있음*/
+
+.gallery_section{
+order:3;
+width:27.083333333333333333333333333333%;
+height:440px;
+background:#f8de73;
+}
+/*width 보면 50으로 가져가고 나머지 섹션 분할해서 가져간 모습*/
+.rankup_section{
+order:4;
+width:22.916666666666666666666666666667%;
+background:#00d2a5;
+}
+
+
+.latest_post_section{
+order:5;
+width:30%;
+background:#9cabe4;
+}
+
+.popular_post_section{
+order:6;
+width:30%;
+background:#d76817;
+}
+
+.banner_section{
+display:flex;
+order:7;
+flex-flow:column nowrap;
+width:22.916666666666666666666666666667%;
+}
+/*배너섹션이 22프로 가져가는데 배너는 div로 나뉘어져 있어
+코드 유의하면서 볼것 */
+.banner_section div{
+flex:1 1 0;
+}
+/* div 에 늘리거나 줄이기 1 1 이며 0 auto 값 준다.
+그리고 2x1로 배치되는 이유는 위쪽을 보면
+row wrap으로 되어 있어서다*/
+.banner_section div.banner_box_01{
+background:#0175bb;
+}
+
+.banner_section div.banner_box_02{
+background:#1261c9;
+}
+
+.social_section{
+order:8;
+width:17.083333333333333333333333333333%;
+height:270px;
+/*height가 여기에만 적혀 있는걸 알 수 있는데
+여기에 나머지 박스들이 다 영향을 받음
+그 이유는 같은 라인이기 때문임.
+굳이 빈공간을 남길 필요가 없음으로 그대로 사용할 것*/
+background:#fe6eda;
+}
+
+/*여기서 가끔 중간실행해도 안나오는 경우가 있는데
+width 가 100% 이라면 다 채워야 보인다.*/
+
+
+.footer{
+order:9;
+width:100%;
+height:94px;
+background:#474747;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header class = "header">
+			<h1></h1>
+			<nav></nav>
+		</header>
+		<section class="slider_section"></section>
+		<section class="gallery_section"></section>
+		<section class="rankup_section"></section>
+		<section class="latest_post_section"></section>
+		<section class="popular_post_section"></section>
+		<section class="banner_section">
+			<div class="banner_box_01"></div>
+			<div class="banner_box_02"></div>
+		</section>
+		<section class="social_section"></section>
+		<footer class="footer"></footer>
+
+	</div>
+</body>
+</html>
