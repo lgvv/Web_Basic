@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+
+/*padding CSS 속성은 요소의 네 방향 안쪽 여백 영역을 설정합니다. 
+padding-top, padding-right, padding-bottom, padding-left의 단축 속성입니다.
+*/
+
+/* 네 면 모두 적용 
+padding: 1em;
+
+/* 세로방향 | 가로방향 
+padding: 5% 10%;
+
+/* 위 | 가로방향 | 아래 
+padding: 1em 2em 2em;
+
+/* 위 | 오른쪽 | 아래 | 왼쪽 
+padding: 5px 1em 0 2em;
+
+ 전역 값 
+padding: inherit;
+padding: initial;
+padding: unset;
+*/
+
+#wrap{
+	width:90%;
+	/* 960px */
+	height:500px;
+	margin:0 auto;
+	border:4px solid black;
+}
+
+#wrap div{
+	width : 31.25%;
+	/* 300px 나누기 960px */
+	display: inline-block;
+}
+
+#wrap div:first-child{
+	padding:50px 5.20833333333333%;
+	/* 50px ÷ 960px */
+	background:blue;
+}
+
+#wrap div:first-child+div{
+	padding:130px 13.54166666666667%;
+	/* 130px ÷ 960px */
+	background:yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div></div><div></div>
+	</div>
+</body>
+</html>
