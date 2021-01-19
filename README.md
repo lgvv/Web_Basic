@@ -1,4 +1,4 @@
-# first_web_project
+# 웹 연구 _  ㄴㄴd
 
 css : http://www.tcpschool.com/css/intro 공부 완료
 html : http://www.tcpschool.com/html/intro 공부 완료
